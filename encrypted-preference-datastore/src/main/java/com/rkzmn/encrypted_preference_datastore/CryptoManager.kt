@@ -1,4 +1,4 @@
-package com.rkzmn.encryptedpreferencedatastore.encryption
+package com.rkzmn.encrypted_preference_datastore
 
 import android.security.keystore.KeyGenParameterSpec
 import android.security.keystore.KeyProperties

@@ -1,6 +1,6 @@
 @file:Suppress("unused")
 
-package com.rkzmn.encryptedpreferencedatastore.datastore
+package com.rkzmn.encrypted_preference_datastore
 
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
@@ -207,6 +207,5 @@ suspend fun DataStore<Preferences>.remove(filter: (Preferences.Key<*>) -> Boolea
  * @return [Flow] of [Preferences] (Fluent API)
  */
 private fun Flow<Preferences>.catchAndHandleError(): Flow<Preferences> {
-    this.catch { emit(emptyPreferences()) }
-    return this@catchAndHandleError
+    return this.catch { emit(emptyPreferences()) }
 }

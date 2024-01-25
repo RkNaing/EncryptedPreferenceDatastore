@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "EncryptedPreferenceDataStore"
 include(":app")
- 
+include(":encrypted-preference-datastore")

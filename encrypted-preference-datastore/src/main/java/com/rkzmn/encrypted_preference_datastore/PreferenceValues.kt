@@ -1,10 +1,12 @@
-package com.rkzmn.encryptedpreferencedatastore.datastore
+package com.rkzmn.encrypted_preference_datastore
 
+import androidx.annotation.Keep
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+@Keep
 @Serializable
-class PreferenceValues(
+internal class PreferenceValues(
     @SerialName("integers") val integers: Map<String, Int> = mapOf(),
     @SerialName("doubles") val doubles: Map<String, Double> = mapOf(),
     @SerialName("strings") val strings: Map<String, String> = mapOf(),
@@ -15,7 +17,7 @@ class PreferenceValues(
     @SerialName("byteArrays") val byteArrays: Map<String, ByteArray> = mapOf()
 ) {
 
-    class Builder {
+    internal class Builder {
 
         private val integers: MutableMap<String, Int> = mutableMapOf()
         private val doubles: MutableMap<String, Double> = mutableMapOf()

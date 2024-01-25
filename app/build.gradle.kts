@@ -2,7 +2,6 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
-    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
@@ -53,6 +52,8 @@ android {
 
 dependencies {
 
+    implementation(project(":encrypted-preference-datastore"))
+
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
     implementation(libs.activity.compose)
@@ -69,7 +70,5 @@ dependencies {
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
 
-    implementation(libs.kotlinx.serialization.json)
     implementation(libs.androidx.datastore.preference)
-    implementation(libs.androidx.security.crypto)
 }

@@ -1,4 +1,4 @@
-package com.rkzmn.encryptedpreferencedatastore.datastore
+package com.rkzmn.encrypted_preference_datastore
 
 import android.content.Context
 import androidx.datastore.core.DataMigration

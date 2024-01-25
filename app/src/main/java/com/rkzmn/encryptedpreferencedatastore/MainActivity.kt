@@ -28,8 +28,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
-import com.rkzmn.encryptedpreferencedatastore.datastore.encryptedPreferenceDataStore
-import com.rkzmn.encryptedpreferencedatastore.datastore.watchValueWithDefault
+import com.rkzmn.encrypted_preference_datastore.encryptedPreferenceDataStore
+import com.rkzmn.encrypted_preference_datastore.watchValueWithDefault
 import com.rkzmn.encryptedpreferencedatastore.ui.theme.EncryptedPreferenceDataStoreTheme
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
