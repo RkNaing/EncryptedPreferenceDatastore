@@ -52,7 +52,8 @@ android {
 
 dependencies {
 
-    implementation(project(":encrypted-preference-datastore"))
+//    implementation(project(":encrypted-preference-datastore"))
+    implementation(libs.encrypted.datastore)
 
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
