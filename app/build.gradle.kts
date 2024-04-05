@@ -41,7 +41,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.7"
+        kotlinCompilerExtensionVersion = "1.5.11"
     }
     packaging {
         resources {
@@ -52,8 +52,7 @@ android {
 
 dependencies {
 
-//    implementation(project(":encrypted-preference-datastore"))
-    implementation(libs.encrypted.datastore)
+    implementation(project(":encrypted-preference-datastore"))
 
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
