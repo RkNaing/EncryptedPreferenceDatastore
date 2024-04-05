@@ -173,11 +173,13 @@ suspend fun <T> Preferences.Key<T>.setValue(dataStore: DataStore<Preferences>, v
 
 /**
  *
- * @param[key] Key to remove
+ * @param[keys] Key(s) to remove
  * @receiver[DataStore] of [Preferences]
  */
-suspend fun DataStore<Preferences>.remove(key: Preferences.Key<*>) {
-    edit { preferences -> preferences.remove(key) }
+suspend fun DataStore<Preferences>.remove(vararg keys: Preferences.Key<*>) {
+    edit { preferences ->
+        keys.forEach { key -> preferences.remove(key) }
+    }
 }
 
 /**
