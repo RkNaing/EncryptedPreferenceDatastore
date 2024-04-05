@@ -67,7 +67,7 @@ class CryptoManager {
     fun decrypt(inputStream: InputStream): ByteArray {
         return inputStream.use {
             val ivSize = inputStream.read()
-            val iv = ByteArray(ivSize)
+            val iv = if (ivSize > 0) ByteArray(ivSize) else byteArrayOf()
             inputStream.read(iv)
 
             val cipher = Cipher.getInstance(TRANSFORMATION)
