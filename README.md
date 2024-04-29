@@ -1,7 +1,4 @@
-## Encrypted Preference Data Store
-
-[![Release](https://jitpack.io/v/RkNaing/EncryptedPreferenceDatastore.svg)]
-(https://jitpack.io/#rknaing/EncryptedPreferenceDatastore)
+## Encrypted Preference Data Store ![](https://jitpack.io/v/RkNaing/EncryptedPreferenceDatastore.svg)
 
 
 The encrypted version preference data store with exact same API and usage as the
